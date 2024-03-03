@@ -1,0 +1,37 @@
+nodemon is used to allow restarting of our node application automatically
+
+
+REST: Representational State Transfer (REST) is an architectural style, not a technology or protocol, used for designing networked applications. It provides a set of guidelines and constraints for creating web services that are scalable, flexible, and easy to understand.
+
+RESTful APIs: RESTful APIs are web APIs that adhere to the principles of REST. These APIs use standard HTTP methods (such as GET, POST, PUT, DELETE) to perform operations on resources (data) identified by unique URLs (Uniform Resource Identifiers).
+
+
+Resources: In this scenario, each resource could represent something like a book, an author, or a category.
+
+HTTP Methods: Just like in a RESTful API, you could use HTTP methods to interact with these resources. For example:
+
+GET: Retrieve information about a book by its ISBN.
+POST: Add a new book to the bookstore's inventory.
+PUT: Update the details of an existing book.
+DELETE: Remove a book from the inventory.
+
+
+
+
+The main difference between the GET and POST HTTP methods lies in how they are used to interact with a server and the type of data they send.
+
+GET:
+
+GET requests are used to retrieve data from the server.
+They are typically used for safe and idempotent operations, meaning they do not change the state of the server or have the same effect when repeated multiple times.
+GET requests can send data to the server through query parameters appended to the URL.
+GET requests are visible in the browser's address bar, as the data is sent as part of the URL.
+They have a limited length for the data they can send, typically around 2048 characters, which may vary across different browsers and servers.
+POST:
+
+POST requests are used to submit data to the server, often to create or update a resource on the server.
+They are not limited by the length of the data they can send, and they can transmit large amounts of data to the server.
+POST requests send data in the body of the HTTP request, rather than in the URL, which makes them suitable for sending sensitive or large amounts of data.
+POST requests are not idempotent, meaning that performing the same POST request multiple times may result in different outcomes or create multiple resources on the server.
+They are commonly used for submitting form data, uploading files, or making complex requests that cannot be expressed with simple query parameters.
+In summary, GET requests are primarily used for retrieving data from the server, while POST requests are used for submitting data to the server, often to create or update resources. GET requests send data through query parameters in the URL and are limited in the amount of data they can send, while POST requests send data in the body of the request and can transmit larger amounts of data.
